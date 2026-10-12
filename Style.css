@@ -1,0 +1,141 @@
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.5;
+    color: #222;
+    background: #f1f3f5;
+}
+
+/* Main CV */
+.resume {
+    width: 100%;
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 40px 48px;
+    background: #fff;
+}
+
+/* Header */
+.header {
+    border-bottom: 2px solid #222;
+    padding-bottom: 16px;
+}
+
+.header h1 {
+    font-size: 27pt;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    color: #111;
+}
+
+.job-title {
+    font-size: 12pt;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.contact p {
+    margin-bottom: 3px;
+    overflow-wrap: anywhere;
+}
+
+/* Links */
+a {
+    color: #222;
+    text-decoration: underline;
+    overflow-wrap: anywhere;
+}
+
+/* Sections */
+.section {
+    margin-top: 19px;
+}
+
+.section h2 {
+    font-size: 12pt;
+    text-transform: uppercase;
+    border-bottom: 1px solid #777;
+    padding-bottom: 4px;
+    margin-bottom: 9px;
+    color: #111;
+}
+
+.section p {
+    margin-bottom: 5px;
+}
+
+.section h3 {
+    font-size: 10.5pt;
+    margin-bottom: 4px;
+    color: #111;
+}
+
+/* Projects and education */
+.project,
+.education-item,
+.certificate {
+    margin-bottom: 12px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* Print to PDF */
+@page {
+    size: A4;
+    margin: 14mm;
+}
+
+@media print {
+    body {
+        background: #fff;
+        font-size: 9.5pt;
+        line-height: 1.4;
+    }
+
+    .resume {
+        max-width: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .section {
+        margin-top: 14px;
+    }
+
+    .header,
+    .section h2,
+    .project,
+    .education-item,
+    .certificate {
+        break-inside: avoid;
+    }
+
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+}
+
+/* Mobile screen */
+@media screen and (max-width: 600px) {
+    .resume {
+        margin: 10px;
+        padding: 22px;
+        width: auto;
+    }
+
+    .header h1 {
+        font-size: 23pt;
+    }
+}
